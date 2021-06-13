@@ -7,7 +7,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["Raleway", "Sans Serif"],
+      sans: ["Noto Sans JP"],
       body: ["Open Sans"],
     },
     extend: {
