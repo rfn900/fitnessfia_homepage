@@ -11,15 +11,20 @@ module.exports = {
       body: ["Open Sans"],
     },
     extend: {
+      blur: {
+        xs: "2px",
+      },
       colors: {
         rose: colors.rose,
         violet: colors.violet,
       },
       fontSize: {
+        xm: "0.5rem",
         "10xl": "10rem",
       },
       letterSpacing: {
         large: "0.3em",
+        extra: "0.5em",
       },
       height: {
         "2px": "2px",
@@ -29,6 +34,7 @@ module.exports = {
         wide: "1440px",
       },
       width: {
+        "2px": "2px",
         desktop: "1680px",
       },
       maxHeight: {
@@ -44,6 +50,15 @@ module.exports = {
       },
       screens: {
         "3xl": "2120px",
+      },
+      inset: {
+        "1/5": "20%",
+      },
+      translate: {
+        "1/5": "20%",
+        "2/5": "40%",
+        "3/5": "60%",
+        "4/5": "80%",
       },
     },
   },
