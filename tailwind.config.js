@@ -1,6 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  mode: "jit",
   purge: {
     content: ["./public/**/*.html"],
   },
@@ -49,6 +50,7 @@ module.exports = {
         laptop: "900px",
       },
       screens: {
+        xs: "412px",
         "3xl": "2120px",
       },
       inset: {
