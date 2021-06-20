@@ -13,17 +13,19 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body id="body" class="w-screen h-full overflow-x-hidden antialiased">
+  <body id="body" class="relative w-screen h-full overflow-x-hidden antialiased">
+  <div id="body-overlay" class="absolute inset-0 z-20 transition bg-opacity-40 duration-500">
+    </div>
     <div
       id="menu"
-      class="fixed right-0 z-40 flex flex-col items-center w-4/5 h-full px-4 py-12 overflow-y-scroll bg-white md:w-96 space-y-4 justify-items-end transform translate-x-full transition duration-500"
+      class="fixed right-0 z-50 flex flex-col items-center w-4/5 h-full px-4 py-12 overflow-y-scroll bg-white md:w-96 space-y-4 justify-items-end transform translate-x-full transition duration-500"
     >
       <svg
         id="close-menu"
         class="absolute w-8 text-gray-400 cursor-pointer top-3 left-3"
         xmlns="http://www.w3.org/2000/svg"
         class="w-6 h-6"
-        fill="none"
+        fill="none" 
         viewBox="0 0 24 24"
         stroke="currentColor"
       >
@@ -78,12 +80,19 @@
       class="relative w-screen mx-auto overflow-hidden transition h-mobile md:h-laptop 2xl:h-desktop 3xl:h-wide md:min-h-laptop bg-gradient-to-br from-rose-100 to-violet-100 bg-opacity-5"
     >
       <nav
-        class="fixed z-20 flex items-center justify-between w-full px-8 py-6 m-auto bg-transparent transition left-1/2 transform -translate-x-1/2 lg:px-24 max-w-desktop"
+        class="fixed z-20 flex items-center justify-between w-full px-8 py-6 m-auto bg-transparent transition lg:px-24 2xl:px-48"
       >
-        <div class="text-2xl font-bold">FitnessFia</div>
-        <div id="hamburger-menu" class="flex flex-col cursor-pointer space-y-2">
-          <div class="w-10 bg-gray-700 h-2px"></div>
-          <div class="w-8 bg-gray-700 h-2px"></div>
+        <div
+          class="flex items-center justify-between w-screen m-auto max-w-desktop"
+        >
+          <div class="text-2xl font-bold">FitnessFia</div>
+          <div
+            id="hamburger-menu"
+            class="flex flex-col cursor-pointer space-y-2"
+          >
+            <div class="w-10 bg-gray-700 h-2px"></div>
+            <div class="w-8 bg-gray-700 h-2px"></div>
+          </div>
         </div>
       </nav>
       <div
@@ -142,9 +151,11 @@
     <!--*************************-->
 
     <div
-      class="relative flex flex-col px-12 pt-12 lg:h-screen space-y-8 lg:px-36 lg:pt-32 md:px-16 3xl:px-96 md:flex-row md:justify- md:space-x-8"
+      class="relative flex flex-col px-12 py-12 space-y-8 lg:px-36 lg:py-32 md:px-16 3xl:px-96 md:flex-row md:justify- md:space-x-8"
     >
-      <div class="relative flex items-start w-full md:w-1/2 3xl:w-2/3">
+      <div
+        class="relative flex items-start justify-end w-full mx-auto md:w-1/2 2xl:w-1/3"
+      >
         <img src="dist/assets/fia-front.png" class="" />
         <div
           class="absolute hidden w-64 bg-red-500 top-36 lg:block h-60 xl:top-60 right-16 w-2px"
@@ -156,9 +167,8 @@
         </h2>
         <div class="w-24 mt-12 bg-red-500 h-2px"></div>
         <div
-          class="flex flex-col w-full py-12 text-gray-600 space-y-4 xl:space-y-8 xl:text-lg 2xl:w-2/3"
+          class="flex flex-col w-full py-12 text-gray-600 space-y-4 xl:space-y-8 xl:text-lg 2xl:pr-8 3xl:w-2/3"
         >
-          <p class="">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
@@ -185,44 +195,100 @@
         </div>
       </div>
     </div>
-    <div class="relative py-4 overflow-hidden">
-      <img
-        class="absolute inset-0 bg-red-400"
-        src="dist/assets/fia-testimonial.png"
-        alt=""
-      />
-      <div
-        class="absolute inset-0 hidden md:block bg-gradient-to-r from-gray-900 to-transparent"
-      ></div>
-      <div
-        class="relative z-10 flex flex-col w-screen p-6 md:p-8 text-gray-50 lg:w-2/3 lg:p-24 space-y-8 md:space-y-6 lg:space-y-8"
-      >
-        <h2 class="font-sans text-2xl font-black uppercase lg:text-3xl">
-          What People has to say about me
-        </h2>
-        <div class="w-24 mt-12 bg-red-500 h-2px"></div>
-        <i class="text-4xl lg:text-6xl fas fa-quote-left"></i>
-        <p
-          class="px-8 pt-12 font-light text-gray-900 md:pt-0 md:px-0 lg:text-2xl lg:p-0 lg:font-thin md:text-gray-50"
-        >
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
-        </p>
+
+    <!--****************************-->
+    <!--Start of Testimonial Section-->
+    <!--****************************-->
+    
+    <div id="testimonial">
+      <div class="relative m-auto overflow-hidden xs:pb-8 lg:pb-24 max-w-desktop">
+        <img
+            class="absolute inset-0 bg-red-400"
+            src="dist/assets/fia-testimonial-large.png"
+            alt=""
+            />
         <div
-          class="flex flex-col px-8 text-gray-900 lg:items-center space-y-2 md:p-0 md:text-gray-50 lg:space-y-0 lg:space-x-4 lg:flex-row"
-        >
-          <span class="font-black">SANDRA FRIBERG</span><span>INFLUENCER</span>
+            class="absolute inset-0 z-10 hidden md:block bg-gradient-to-r from-black to-transparent"
+            ></div>
+        <div
+            class="relative z-10 flex flex-col w-screen p-6 md:p-24 text-gray-50 lg:w-2/3 2xl:p-24 2xl:w-1/2 md:space-y-6 lg:space-y-8"
+            >
+            <h2 class="font-sans text-2xl font-black uppercase lg:text-3xl">
+              What People has to say about me
+            </h2>
+          <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+          <i class="mt-8 text-4xl lg:text-6xl fas fa-quote-left"></i>
+          <div class="hidden sm:block">
+            <div class="flex flex-col mt-8">
+              <p
+                  class="mt-auto text-xl font-light lg:text-2xl 2xl:text-3xl lg:font-thin md:text-gray-50"
+                  >
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                  sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                  rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                  ipsum dolor sit amet.
+              </p>
+            </div>
+            <div
+                class="flex flex-col mt-8 lg:items-center space-y-2 md:p-0 md:text-gray-50 lg:space-y-0 lg:space-x-4 lg:flex-row"
+                >
+                <span class="font-black">SANDRA FRIBERG</span><span>INFLUENCER</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="px-12 py-8 m-auto overflow-hidden sm:hidden max-w-desktop">
+        <div class="flex flex-col">
+          <p
+              class="font-light text-gray-800"
+              >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+              sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+              rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+              ipsum dolor sit amet.
+          </p>
         </div>
         <div
-          class="flex px-8 text-2xl text-gray-800 md:px-0 lg:py-8 md:text-gray-50 space-x-12"
-        >
-          <i class="fas fa-arrow-left"></i>
-          <i class="fas fa-arrow-right"></i>
+            class="flex flex-col mt-8 text-gray-900 "
+            >
+            <span class="font-black">SANDRA FRIBERG</span><span>INFLUENCER</span>
         </div>
       </div>
+    </div>
+
+
+    <!--**********************-->
+    <!--Start of Blog Section -->
+    <!--**********************-->
+    <div id="blog-news"
+      class="p-12 m-auto mt-12 bg-green-50"
+      >
+      <div class="m-auto text-center bg-yellow-50">
+        <h2 class="font-sans text-3xl font-black text-gray-900 uppercase bg-red-50">
+          News From the Blog
+        </h2>
+        <div class="w-24 m-auto mt-12 bg-red-500 h-2px"></div>
+        <div
+            class="mt-12"
+            >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center text-blue-400 bg-blue-400">
+
+        <div class="w-screen max-w-desktop lg:p-36 grid grid-cols-3 gap-2">
+
+          <div class="p-10 bg-white rounded col-span-3">1</div>
+          <div class="p-10 bg-white rounded">2</div>
+          <div class="p-10 bg-white rounded">3</div>
+          <div class="p-10 bg-white rounded">4</div>
+         
+        </div>
+
+      </div>  
     </div>
     <script src="dist/js/script.js"></script>
   </body>

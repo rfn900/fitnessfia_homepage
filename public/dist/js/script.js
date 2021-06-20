@@ -5,17 +5,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
   heroSection = document.getElementById("hero-section");
   body = document.getElementsByTagName("body")[0];
   nav = document.getElementsByTagName("nav")[0];
+  overlay = document.getElementById("body-overlay");
 
   hamburgerIcon.addEventListener("click", (e) => {
     menu.classList.remove("translate-x-full");
     heroSection.classList.add("filter");
     menu.classList.add("shadow-2xl");
     body.classList.add("overflow-y-hidden");
+    overlay.classList.add("bg-black");
+    overlay.classList.add("z-40");
   });
   closeMenuIcon.addEventListener("click", (e) => {
     menu.classList.add("translate-x-full");
     menu.classList.remove("shadow-2xl");
     body.classList.remove("overflow-y-hidden");
+    overlay.classList.remove("bg-black");
+    overlay.classList.remove("z-40");
   });
 
   document.addEventListener("click", (e) => {
@@ -23,6 +28,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       console.log("aqui");
       menu.classList.add("translate-x-full");
       body.classList.remove("overflow-y-hidden");
+      overlay.classList.remove("bg-black");
+      overlay.classList.remove("z-40");
     }
   });
 
