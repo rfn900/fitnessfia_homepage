@@ -14,7 +14,7 @@
     />
   </head>
   <body id="body" class="relative w-screen h-full overflow-x-hidden antialiased">
-  <div id="body-overlay" class="absolute inset-0 z-20 transition bg-opacity-40 duration-500">
+  <div id="body-overlay" class="absolute inset-0 z-20 hidden bg-opacity-40 ">
     </div>
     <div
       id="menu"
@@ -77,10 +77,10 @@
     </div>
     <div
       id="hero-section"
-      class="relative w-screen mx-auto overflow-hidden transition h-mobile md:h-laptop 2xl:h-desktop 3xl:h-wide md:min-h-laptop bg-gradient-to-br from-rose-100 to-violet-100 bg-opacity-5"
+      class="relative z-20 w-screen mx-auto overflow-hidden transition h-mobile md:h-laptop 2xl:h-desktop 3xl:h-wide md:min-h-laptop bg-gradient-to-br from-rose-100 to-violet-100 bg-opacity-5"
     >
       <nav
-        class="fixed z-20 flex items-center justify-between w-full px-8 py-6 m-auto bg-transparent transition lg:px-24 2xl:px-48"
+        class="fixed z-40 flex items-center justify-between w-full px-8 py-6 m-auto bg-transparent transition lg:px-24 2xl:px-48"
       >
         <div
           class="flex items-center justify-between w-screen m-auto max-w-desktop"
@@ -117,12 +117,12 @@
           </p>
           <div class="w-10 mt-2 mr-2 bg-red-600 lg:ml-2 h-2px"></div>
           <a
-            class="px-4 py-2 mt-8 mr-1 font-bold text-white bg-red-600 shadow-md lg:mt-12 md:px-6 md:py-3 md:text-2xl rounded-md"
+            class="mt-8 mr-1 btn-secondary lg:mt-12"
             >Check it Out</a
           >
         </div>
         <div
-          class="absolute right-0 w-full bottom-10 lg:right-8 lg:w-1/2 2xl:right-32 3xl:right-1/5 3xl:w-1/3"
+          class="absolute right-0 w-full bottom-10 md:w-3/4 lg:right-8 lg:w-1/2 2xl:right-32 3xl:right-1/5 3xl:w-1/3"
         >
           <img
             src="dist/assets/hero-large.png"
@@ -150,7 +150,7 @@
     <!--Start of About Me Section-->
     <!--*************************-->
 
-    <div
+    <section
       class="relative flex flex-col px-12 py-12 space-y-8 lg:px-36 lg:py-32 md:px-16 3xl:px-96 md:flex-row md:justify- md:space-x-8"
     >
       <div
@@ -194,24 +194,22 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!--****************************-->
     <!--Start of Testimonial Section-->
     <!--****************************-->
     
-    <div id="testimonial">
+    <section id="testimonial">
       <div class="relative m-auto overflow-hidden xs:pb-8 lg:pb-24 max-w-desktop">
         <img
             class="absolute inset-0 bg-red-400"
             src="dist/assets/fia-testimonial-large.png"
             alt=""
             />
+     
         <div
-            class="absolute inset-0 z-10 hidden md:block bg-gradient-to-r from-black to-transparent"
-            ></div>
-        <div
-            class="relative z-10 flex flex-col w-screen p-6 md:p-24 text-gray-50 lg:w-2/3 2xl:p-24 2xl:w-1/2 md:space-y-6 lg:space-y-8"
+            class="relative z-10 flex flex-col w-screen p-6 md:p-12 lg:p-24 text-gray-50 lg:w-2/3 2xl:p-24 2xl:w-1/2 md:space-y-6 lg:space-y-8"
             >
             <h2 class="font-sans text-2xl font-black uppercase lg:text-3xl">
               What People has to say about me
@@ -257,17 +255,17 @@
             <span class="font-black">SANDRA FRIBERG</span><span>INFLUENCER</span>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <!--**********************-->
     <!--Start of Blog Section -->
     <!--**********************-->
-    <div id="blog-news"
-      class="p-12 m-auto mt-12 bg-green-50"
+    <section id="blog-news"
+      class="relative p-12 m-auto mt-12"
       >
-      <div class="m-auto text-center bg-yellow-50">
-        <h2 class="font-sans text-3xl font-black text-gray-900 uppercase bg-red-50">
+      <div class="m-auto text-center">
+        <h2 class="font-sans text-3xl font-black text-gray-900 uppercase">
           News From the Blog
         </h2>
         <div class="w-24 m-auto mt-12 bg-red-500 h-2px"></div>
@@ -276,20 +274,120 @@
             >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
         </div>
+        <div class="mt-12"><a class="btn-secondary" href="">Check Blog</a></div>
+
       </div>
-      <div class="flex items-center justify-center text-blue-400 bg-blue-400">
 
-        <div class="w-screen max-w-desktop lg:p-36 grid grid-cols-3 gap-2">
+      <div class="relative flex items-center justify-center mt-6">
+        <div class="relative w-screen max-w-desktop lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
+            <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
+              <img class="object-contain rounded-xl transform scale-125 "
+              src="dist/assets/post1.jpeg" alt="">
+            </div>
+            <div class="flex flex-col justify-between px-8 py-4 space-y-6">
+              <h2 class="font-sans text-lg font-black text-gray-900 lg:text-xl">Tränningstights bäst i test</h2>
+              <div class="">
+                <p class="text-lg">
+               Jag tränar ofta i träningstights med hög midja eftersom det är så
+               bekvämt. Passar perfekt om man som jag gärna endast tränar i
+               sportbh upptill...
+                </p>
+              </div>
+            </div>
+              <div class="px-8 py-3 mt-auto mb-5">
+                <a class="text-lg btn-primary " href="#">Läs Mer</a>
+              </div>
+          </div>
 
-          <div class="p-10 bg-white rounded col-span-3">1</div>
-          <div class="p-10 bg-white rounded">2</div>
-          <div class="p-10 bg-white rounded">3</div>
-          <div class="p-10 bg-white rounded">4</div>
-         
+          <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
+            <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
+              <img class="object-contain rounded-xl transform scale-125 "
+              src="dist/assets/post2.jpeg" alt="">
+            </div>
+            <div class="flex flex-col justify-between px-8 py-4 space-y-6">
+              <h2 class="font-sans text-lg font-black text-gray-900 lg:text-xl">Bli av med mammakilor snabbt</h2>
+              <div class="">
+                <p class="text-lg">
+               Jag tränar ofta i träningstights med hög midja eftersom det är så
+               bekvämt. Passar perfekt om man som jag gärna endast tränar i
+               sportbh upptill...
+                </p>
+              </div>
+            </div>
+              <div class="px-8 py-3 mt-auto mb-5">
+                <a class="text-lg btn-primary " href="#">Läs Mer</a>
+              </div>
+          </div>
+          <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
+            <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
+              <img class="object-contain rounded-xl transform scale-125 " src="dist/assets/post3.jpeg" alt="">
+            </div>
+            <div class="flex flex-col justify-between px-8 py-4 space-y-6">
+              <h2 class="font-sans text-lg font-black text-gray-900 lg:text-xl">Aktivitetsarmband bäst i test</h2>
+              <div class="">
+                <p class="text-lg">
+               Jag tränar ofta i träningstights med hög midja eftersom det är så
+               bekvämt. Passar perfekt om man som jag gärna endast tränar i
+               sportbh upptill...
+                </p>
+              </div>
+            </div>
+              <div class="px-8 py-3 mt-auto mb-5">
+                <a class="text-lg btn-primary " href="#">Läs Mer</a>
+              </div>
+          </div>
         </div>
-
       </div>  
-    </div>
+    </section>
+    
+    <!--****************************-->
+    <!--Start of Contact Me Section -->
+    <!--****************************-->
+   
+    <section id="contact-me" class="relative w-screen m-auto mt-24 md:mt-32 lg:mt-48 bg-gray-50 min-h-mobile">
+      <div class="absolute top-0 flex w-full h-72">
+        <div class="w-1/3 h-full bg-gray-50 transform -skew-y-12 origin-left"></div>
+        <div class="w-2/3 h-full bg-gray-50 transform skew-y-6 origin-right"></div>
+      </div>
+      <div class="relative flex flex-col justify-center py-12 lg:flex-row max-w-desktop">
+        <div class="relative flex items-center justify-center w-full p-12 lg:mt-8 lg:justify-end lg:w-1/2">
+          <div class="absolute w-3/4 bg-gray-900 shadow-md lg:w-2/3 top-4 h-5/6 left-20 lg:left-40">
+          </div>
+          <img
+          src="https://fitnessfia.com/wp-content/uploads/2018/01/Fördelar-med-träning.jpg"
+          class="relative w-full shadow-lg lg:w-3/4" alt="">
+        </div>
+        <div class="flex flex-col w-full px-12 py-8 lg:p-8 lg:w-1/2 space-y-8">
+          <h2 class="font-sans text-4xl font-black uppercase">Contact me</h2>
+          <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+          <form action="" method="post" class="flex flex-col py-4 space-y-8">
+            <div class="flex flex-col">
+              <div class="mb-2 font-sans text-xl font-bold">Name:</div>
+              <div><input id="sender-name" type="text" name="sender-name"
+                class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-900 focus:bg-white lg:w-2/3 "></div>
+            </div>
+             
+            <div class="flex flex-col">
+              <div class="font-sans text-xl mb-2 font-bold">Email:</div>
+              <div><input id="sender-email" type="email" name="sender-email"
+                class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-900 focus:bg-white lg:w-2/3 "></div>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="font-sans text-xl font-bold">Message:</div>
+              <div>
+                <textarea name="message" id="message" class="w-full p-3 mt-4 bg-transparent border-0 border-b-2 border-gray-900 outline-none focus:outline-none focus:bg-white lg:w-2/3"></textarea>
+              </div>
+            </div>
+            <div class="w-1/2 md:w-1/4">
+              <input type="submit" id="submit-message" value="Send Message"
+              class="btn-secondary">
+            </div>
+          </form>
+    </section>
+
     <script src="dist/js/script.js"></script>
   </body>
 </html>

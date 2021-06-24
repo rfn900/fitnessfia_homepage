@@ -13,14 +13,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
     menu.classList.add("shadow-2xl");
     body.classList.add("overflow-y-hidden");
     overlay.classList.add("bg-black");
-    overlay.classList.add("z-40");
+    overlay.classList.add("z-50");
+    overlay.classList.remove("hidden");
   });
   closeMenuIcon.addEventListener("click", (e) => {
     menu.classList.add("translate-x-full");
     menu.classList.remove("shadow-2xl");
     body.classList.remove("overflow-y-hidden");
     overlay.classList.remove("bg-black");
-    overlay.classList.remove("z-40");
+    overlay.classList.remove("z-50");
+    overlay.classList.add("hidden");
   });
 
   document.addEventListener("click", (e) => {
@@ -29,7 +31,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       menu.classList.add("translate-x-full");
       body.classList.remove("overflow-y-hidden");
       overlay.classList.remove("bg-black");
-      overlay.classList.remove("z-40");
+      overlay.classList.remove("z-50");
+      overlay.classList.add("hidden");
     }
   });
 

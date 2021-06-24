@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  mode: "jit",
+  //mode: "jit",
   purge: {
     content: ["./public/**/*.html"],
   },
@@ -26,6 +26,9 @@ module.exports = {
       letterSpacing: {
         large: "0.3em",
         extra: "0.5em",
+      },
+      outline: {
+        red: ["2px solid #FEE4E7", "1px"],
       },
       height: {
         "2px": "2px",
@@ -62,10 +65,17 @@ module.exports = {
         "3/5": "60%",
         "4/5": "80%",
       },
+      zIndex: {
+        "-10": "-10",
+      },
     },
   },
   variants: {
-    extend: {},
+    zIndex: ["hover"],
+    outline: ["focus"],
+    extend: {
+      scale: ["focus-within"],
+    },
   },
   plugins: [],
 };
