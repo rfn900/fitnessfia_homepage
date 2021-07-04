@@ -77,5 +77,5 @@ module.exports = {
       scale: ["focus-within"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

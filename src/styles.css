@@ -13,10 +13,13 @@
   .btn-secondary {
     @apply px-4 py-2 font-bold text-red-600 bg-transparent border-2 border-red-600 shadow cursor-pointer rounded-md hover:bg-red-500 hover:text-white;
   }
-}
-
-body::-moz-selection,
-body::selection {
-  color: #313131;
-  background: #efe8f9;
+  .cat-bullets {
+    @apply px-3 py-1 rounded-2xl;
+  }
+  .cat-bullets-color-0 {
+    @apply bg-rose-50 text-rose-600;
+  }
+  .cat-bullets-color-1 {
+    @apply bg-violet-50 text-violet-600;
+  }
 }

@@ -48,19 +48,19 @@
       <div class="w-full h-full">
         <div class="flex items-center justify-center py-2 space-x-4">
           <div
-            class="social-disc bg-gradient-to-br from-violet-100 to-rose-100"
+            class="social-disc bg-violet-50"
           >
             <i class="text-lg text-violet-600 fab fa-instagram"></i>
           </div>
 
           <div
-            class="social-disc bg-gradient-to-br from-violet-100 to-rose-100"
+            class="social-disc bg-rose-50 "
           >
-            <i class="text-lg text-violet-600 fab fa-facebook-f"></i>
+            <i class="text-lg text-rose-600 fab fa-facebook-f"></i>
           </div>
           <div
-            class="social-disc bg-gradient-to-br from-rose-100 to-violet-100"
-          >
+            class="social-disc bg-violet-50"
+      >
             <i class="text-2xl fab text-violet-600 fa-pinterest-p"></i>
           </div>
         </div>
@@ -68,7 +68,7 @@
           class="w-full py-4 font-sans text-base font-thin tracking-wider text-gray-800 uppercase"
         >
           <a href=""><li class="top-0 py-3 mx-2 border-b">Börja Här</li></a>
-          <a href=""><li class="top-0 py-3 mx-2 border-b">Blog</li></a>
+          <a href="https://fitnessfia.com"><li class="top-0 py-3 mx-2 border-b">Blogg</li></a>
           <a href=""><li class="top-0 py-3 mx-2 border-b">Gratis E-bok</li></a>
           <a href=""><li class="top-0 py-3 mx-2 border-b">Om Fitnessfia</li></a>
           <a href=""><li class="top-0 py-3 mx-2 border-b">Kontakta Mig</li></a>
@@ -154,21 +154,26 @@
       class="relative flex flex-col px-12 py-12 space-y-8 lg:px-36 lg:py-32 md:px-16 3xl:px-96 md:flex-row md:justify- md:space-x-8"
     >
       <div
-        class="relative flex items-start justify-end w-full mx-auto md:w-1/2 2xl:w-1/3"
+        class="relative flex flex-col items-start justify-end w-full mx-auto md:flex-row md:w-1/2 2xl:w-1/3"
       >
-        <img src="dist/assets/fia-front.png" class="" />
+        <h2 class="w-full font-sans text-3xl font-black text-center text-gray-900 uppercase md:hidden">
+          Några Ord Om Mig
+        </h2>
+        <div class="w-24 m-auto mt-12 bg-red-500 md:hidden md:block h-2px"></div>
+        <img src="dist/assets/fia-front.png" class="mt-12 md:mt-0" />
         <div
           class="absolute hidden w-64 bg-red-500 top-36 lg:block h-60 xl:top-60 right-16 w-2px"
         ></div>
       </div>
       <div class="w-full md:w-1/2">
-        <h2 class="font-sans text-3xl font-black text-gray-900 uppercase">
+        <h2 class="hidden font-sans text-3xl font-black text-gray-900 uppercase md:block">
           Några Ord Om Mig
         </h2>
-        <div class="w-24 mt-12 bg-red-500 h-2px"></div>
+        <div class="hidden w-24 mt-12 bg-red-500 md:block h-2px"></div>
         <div
-          class="flex flex-col w-full py-12 text-gray-600 space-y-4 xl:space-y-8 xl:text-lg 2xl:pr-8 3xl:w-2/3"
+          class="flex flex-col w-full pb-12 text-gray-600 md:py-12 space-y-4 xl:space-y-8 xl:text-lg 2xl:pr-8 3xl:w-2/3"
         >
+          <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
@@ -282,60 +287,62 @@
         <div class="relative w-screen max-w-desktop lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
-            <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
-              <img class="object-contain rounded-xl transform scale-125 "
-              src="dist/assets/post1.jpeg" alt="">
+            <div class="relative w-full overflow-hidden bg-blue-400 rounded-t-xl">
+              <img id="feat-img-1" class="relative object-contain w-full rounded-t-xl "
+              alt="">
             </div>
-            <div class="flex flex-col justify-between px-8 py-4 space-y-6">
-              <h2 class="font-sans text-lg font-black text-gray-900 lg:text-xl">Tränningstights bäst i test</h2>
-              <div class="">
-                <p class="text-lg">
-               Jag tränar ofta i träningstights med hög midja eftersom det är så
-               bekvämt. Passar perfekt om man som jag gärna endast tränar i
-               sportbh upptill...
-                </p>
+            <div class="flex flex-col justify-between px-8 py-4 space-y-4">
+              <div id="feat-cat-1" class="flex mt-2 text-xs gap-1">
+              </div>
+              <a id="feat-title-link-1">
+                <h2 id="feat-title-1" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
+              </a>
+              <div id="feat-excerpt-1" class="line-clamp-6">
+
               </div>
             </div>
-              <div class="px-8 py-3 mt-auto mb-5">
-                <a class="text-lg btn-primary " href="#">Läs Mer</a>
+              <div class="px-8 pb-2 my-6">
+                <a id="feat-link-1" class="text-lg btn-primary">Läs Mer</a>
               </div>
           </div>
 
           <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
             <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
-              <img class="object-contain rounded-xl transform scale-125 "
-              src="dist/assets/post2.jpeg" alt="">
+              <img id="feat-img-2" class="object-contain w-full rounded-t-xl "
+              alt="">
             </div>
-            <div class="flex flex-col justify-between px-8 py-4 space-y-6">
-              <h2 class="font-sans text-lg font-black text-gray-900 lg:text-xl">Bli av med mammakilor snabbt</h2>
-              <div class="">
-                <p class="text-lg">
-               Jag tränar ofta i träningstights med hög midja eftersom det är så
-               bekvämt. Passar perfekt om man som jag gärna endast tränar i
-               sportbh upptill...
-                </p>
+            <div class="flex flex-col justify-between px-8 py-4 space-y-4">
+              <div id="feat-cat-2" class="flex mt-2 text-xs gap-1">
+              </div>
+              <a id="feat-title-link-2">
+                <h2 id="feat-title-2" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
+              </a>
+              <div id="feat-excerpt-2" class="line-clamp-6">
+
               </div>
             </div>
-              <div class="px-8 py-3 mt-auto mb-5">
-                <a class="text-lg btn-primary " href="#">Läs Mer</a>
+              <div class="px-8 pb-2 my-6">
+                <a id="feat-link-2" class="text-lg btn-primary">Läs Mer</a>
               </div>
           </div>
+          
           <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
             <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
-              <img class="object-contain rounded-xl transform scale-125 " src="dist/assets/post3.jpeg" alt="">
+              <img id="feat-img-3" class="object-contain w-full rounded-t-xl "
+              alt="">
             </div>
-            <div class="flex flex-col justify-between px-8 py-4 space-y-6">
-              <h2 class="font-sans text-lg font-black text-gray-900 lg:text-xl">Aktivitetsarmband bäst i test</h2>
-              <div class="">
-                <p class="text-lg">
-               Jag tränar ofta i träningstights med hög midja eftersom det är så
-               bekvämt. Passar perfekt om man som jag gärna endast tränar i
-               sportbh upptill...
-                </p>
+            <div class="flex flex-col justify-between px-8 py-4 space-y-4">
+              <div id="feat-cat-3" class="flex mt-2 text-xs gap-1">
+              </div>
+              <a id="feat-title-link-3">
+                <h2 id="feat-title-3" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
+              </a>
+              <div id="feat-excerpt-3" class="line-clamp-6">
+
               </div>
             </div>
-              <div class="px-8 py-3 mt-auto mb-5">
-                <a class="text-lg btn-primary " href="#">Läs Mer</a>
+              <div class="px-8 pb-2 my-6">
+                <a id="feat-link-3" class="text-lg btn-primary">Läs Mer</a>
               </div>
           </div>
         </div>
@@ -346,48 +353,124 @@
     <!--Start of Contact Me Section -->
     <!--****************************-->
    
-    <section id="contact-me" class="relative w-screen m-auto mt-24 md:mt-32 lg:mt-48 bg-gray-50 min-h-mobile">
+    <section id="contact-me" class="relative w-screen m-auto mt-24 bg-gray-50 md:mt-36 2xl:mt-96 min-h-mobile">
       <div class="absolute top-0 flex w-full h-72">
         <div class="w-1/3 h-full bg-gray-50 transform -skew-y-12 origin-left"></div>
         <div class="w-2/3 h-full bg-gray-50 transform skew-y-6 origin-right"></div>
       </div>
-      <div class="relative flex flex-col justify-center py-12 lg:flex-row max-w-desktop">
-        <div class="relative flex items-center justify-center w-full p-12 lg:mt-8 lg:justify-end lg:w-1/2">
-          <div class="absolute w-3/4 bg-gray-900 shadow-md lg:w-2/3 top-4 h-5/6 left-20 lg:left-40">
+      <div class="m-auto max-w-desktop">
+        <div class="relative flex flex-col justify-center pb-12 lg:flex-row max-w-desktop">
+          <div class="relative flex items-center justify-center w-full p-12 lg:mt-8 lg:justify-end lg:w-1/2">
+            <div class="absolute w-3/4 shadow-md bg-gradient-to-br from-rose-200 to-violet-200 lg:w-2/3 top-8 h-4/6 left-20 lg:left-40">
+            </div>
+            <img
+                src="https://fitnessfia.com/wp-content/uploads/2018/01/Fördelar-med-träning.jpg"
+                class="relative w-full shadow-lg lg:w-3/4" alt="">
           </div>
-          <img
-          src="https://fitnessfia.com/wp-content/uploads/2018/01/Fördelar-med-träning.jpg"
-          class="relative w-full shadow-lg lg:w-3/4" alt="">
-        </div>
-        <div class="flex flex-col w-full px-12 py-8 lg:p-8 lg:w-1/2 space-y-8">
-          <h2 class="font-sans text-4xl font-black uppercase">Contact me</h2>
-          <div class="w-24 mt-8 bg-red-500 h-2px"></div>
-          <form action="" method="post" class="flex flex-col py-4 space-y-8">
-            <div class="flex flex-col">
-              <div class="mb-2 font-sans text-xl font-bold">Name:</div>
-              <div><input id="sender-name" type="text" name="sender-name"
-                class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-900 focus:bg-white lg:w-2/3 "></div>
-            </div>
-             
-            <div class="flex flex-col">
-              <div class="font-sans text-xl mb-2 font-bold">Email:</div>
-              <div><input id="sender-email" type="email" name="sender-email"
-                class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-900 focus:bg-white lg:w-2/3 "></div>
-            </div>
-
-            <div class="flex flex-col">
-              <div class="font-sans text-xl font-bold">Message:</div>
-              <div>
-                <textarea name="message" id="message" class="w-full p-3 mt-4 bg-transparent border-0 border-b-2 border-gray-900 outline-none focus:outline-none focus:bg-white lg:w-2/3"></textarea>
+          <div class="flex flex-col w-full px-12 py-8 lg:p-8 lg:w-1/2 space-y-8">
+            <h2 class="font-sans text-4xl font-black uppercase">Contact me</h2>
+            <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+            <form action="" method="post" class="flex flex-col py-4 space-y-8">
+              <div class="flex flex-col">
+                <div class="mb-2 font-sans text-xl font-bold">Name:</div>
+                <div><input id="sender-name" required type="text" name="sender-name"
+                  class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-500 focus:bg-white lg:w-2/3 "></div>
               </div>
-            </div>
-            <div class="w-1/2 md:w-1/4">
-              <input type="submit" id="submit-message" value="Send Message"
-              class="btn-secondary">
-            </div>
-          </form>
+
+              <div class="flex flex-col">
+                <div class="mb-2 font-sans text-xl font-bold">Email:</div>
+                <div><input id="sender-email" required type="email" name="sender-email"
+                  class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-500 focus:bg-white lg:w-2/3 "></div>
+              </div>
+
+              <div class="flex flex-col">
+                <div class="font-sans text-xl font-bold">Message:</div>
+                <div>
+                  <textarea name="message" id="message" required class="w-full p-3 mt-4 bg-transparent border-0 border-b-2 border-gray-500 outline-none focus:outline-none focus:bg-white lg:w-2/3"></textarea>
+                </div>
+              </div>
+              <div class="w-1/2 md:w-1/4">
+                <input type="submit" id="submit-message" value="Send Message"
+                class="btn-secondary">
+              </div>
+            </form>
+          </div>
     </section>
 
+    <section class="relative w-screen p-8 m-auto bg-gray-900 lg:p-12 text-gray-50">
+     <div class="flex flex-col w-full h-full m-auto gap-8 max-w-desktop lg:gap-4 justify-evenly xl:flex-row">
+       <div class="w-full h-full px-4 py-2">
+         <h2 class="font-sans text-lg font-black">FitnessFia</h2>
+         <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+         <p class="mt-4">
+         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+         </p>
+         <div class="flex mt-8 gap-6">
+            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-facebook-f"></i></a>
+            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-instagram"></i></a>
+            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-pinterest-p"></i></a>
+            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl far fa-envelope"></i></a>
+         </div>
+       </div>
+       <div class="w-1/2 h-full px-4 py-2 ">
+         <h2 class="font-sans text-lg font-black uppercase">Quick Links</h2>
+         <ul class="flex flex-col mt-8 gap-4">
+           <li>Hem</li>
+           <li>Om Mig</li>
+           <li>Kontakt</li>
+           <li>Blogg</li
+         </ul>
+       </div>
+       <div class="w-full h-full px-4 py-2">
+         <h2 class="text-lg font-black uppercase fonst-sans">Latest Blog Posts</h2>
+         <div class="flex flex-col mt-8 gap-4">
+           <a id="post-link-1">
+             <div id="recent-post-1" class="flex w-full h-28 gap-2">
+               <div id="img-1" class="w-20 h-20">
+               </div>
+               <div class="w-3/4 overflow-hidden">
+                 <h2 id="title-1" class="font-sans text-sm font-black leading-tight"></h2>
+                 <div id="date-1" class="mt-1 text-sm text-gray-300">
+                 </div>
+               </div>
+             </div>
+           </a>
+           <a id="post-link-2">
+             <div id="recent-post-2" class="flex w-full h-28 md:w-5/12 lg:w-full gap-2">
+               <div id="img-2" class="w-20 h-20">
+               </div>
+               <div class="w-3/4 overflow-hidden">
+                 <h2 id="title-2" class="font-sans text-sm font-black leading-tight"></h2>
+                 <div id="date-2" class="mt-1 text-sm text-gray-300">
+                 </div>
+               </div>
+             </div>
+           </a>
+         </div>
+       </div>
+       <div class="w-full h-full px-4 py-2">
+         <h2 class="font-sans text-lg font-black uppercase">
+           newsletter</h2>
+         <p class="mt-6">
+         
+         Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+         </p>
+         <form action="/" method="POST" class="relative mt-2">
+           <input type="email" name="subscribe-email" id="subscribe-email"
+                                                      placeholder="Your Email"
+           class="w-4/5 p-2 mt-2 text-lg text-gray-700 bg-gray-600 rounded-l md:w-1/2 xl:w-4/5 focus:bg-gray-100">
+           <button type="submit" class="absolute mt-2 text-gray-600 bg-transparent border-gray-600 rounded-l-none btn-primary hover:text-gray-200 hover:border-gray-200 transition">
+             <i class="fas fa-paper-plane"></i>
+           </button>
+         </form>
+
+       </div>
+     </div> 
+    </section>
+    <div class="w-screen px-16 py-1 text-gray-500 bg-gray-100">
+      <p class="text-xs tracking-wide text-center">© 2021 FitnessFia All Rights Reserved. MARSian
+      Online Group AB</p>
+    </div>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
