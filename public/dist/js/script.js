@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   document.addEventListener("click", (e) => {
     if (!e.path.includes(menu) && !e.path.includes(hamburgerIcon)) {
-      console.log("aqui");
       menu.classList.add("translate-x-full");
       body.classList.remove("overflow-y-hidden");
       overlay.classList.remove("bg-black");

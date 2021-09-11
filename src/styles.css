@@ -3,6 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .clip-path-up {
+    clip-path: polygon(50% 0, 100% 0, 100% 90%, 65% 100%, 0 90%, 0 0);
+  }
+  .clip-path-up-mobile {
+    clip-path: polygon(50% 0, 100% 0, 100% 90%, 65% 95%, 0 90%, 0 0);
+  }
+  .clip-path-down {
+    clip-path: polygon(34% 0, 100% 11%, 100% 100%, 64% 100%, 0 100%, 0 11%);
+  }
+  .clip-path-down-mobile {
+    clip-path: polygon(35% 0, 100% 5%, 100% 100%, 60% 100%, 0 100%, 0 5%);
+  }
+}
+
 @layer components {
   .social-disc {
     @apply flex items-center justify-center w-12 h-12 rounded-full shadow;
@@ -22,9 +37,4 @@
   .cat-bullets-color-1 {
     @apply bg-violet-50 text-violet-600;
   }
-}
-
-#hero-section {
-  clip-path: polygon(0 1%, 100% 1%, 100% 78%, 65% 95%, 0 81%, 0% 50%);
-  background-color: red !important;
 }
