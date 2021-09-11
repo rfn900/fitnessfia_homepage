@@ -1,7 +1,7 @@
 # New homepage to fitnessfia.com
 
 This ongoing project is part of the full redesign of the fitnessfia blog - check
-the current status live at fitnessfia.com/home
+the current status live at https://fitnessfia.com/home
 
 The homepage is done using Tailwindcss as a Postcss plugin.
 
