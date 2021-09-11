@@ -8,7 +8,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ["Noto Sans JP"],
+      sans: ["Noto Sans JP", "oswald"],
       body: ["Open Sans"],
     },
     extend: {

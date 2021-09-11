@@ -13,445 +13,394 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body id="body" class="relative w-screen h-full overflow-x-hidden antialiased">
+<body class="relative w-screen h-full overflow-x-hidden antialiased">
+
   <div id="body-overlay" class="absolute inset-0 z-20 hidden bg-opacity-40 ">
-    </div>
-    <div
-      id="menu"
-      class="fixed right-0 z-50 flex flex-col items-center w-4/5 h-full px-4 py-12 overflow-y-scroll bg-white md:w-96 space-y-4 justify-items-end transform translate-x-full transition duration-500"
-    >
-      <svg
-        id="close-menu"
-        class="absolute w-8 text-gray-400 cursor-pointer top-3 left-3"
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        fill="none" 
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round</div>"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M6 18L18 6M6 6l12 12"
-        />
+  </div>
+  <div id="menu" class="fixed right-0 z-50 flex flex-col items-center w-4/5 h-full px-4 py-12 overflow-y-scroll bg-white md:w-96 space-y-4 justify-items-end transform translate-x-full transition duration-500">
+      <svg id="close-menu" class="absolute w-8 text-gray-400 cursor-pointer top-3 left-3" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round</div>" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
 
       <div class="py-12">
-        <img
-          src="dist/assets/avatar.png"
-          alt=""
-          class="w-40 rounded-full shadow-xl"
-        />
+          <img src="https://fitnessfia.com/wp-content/uploads/2021/09/avatar.png" alt="" class="w-40 rounded-full shadow-xl" />
       </div>
       <div class="w-10 w-1/3 mr-2 text-center bg-gray-200 lg:ml-2 h-2px"></div>
       <div class="w-full h-full">
-        <div class="flex items-center justify-center py-2 space-x-4">
-          <div
-            class="social-disc bg-violet-50"
-          >
-            <i class="text-lg text-violet-600 fab fa-instagram"></i>
-          </div>
+          <div class="flex items-center justify-center py-2 space-x-4">
+              <a href="https://instagram.com/_fitnessfia" rel="nofollow" target="_blank">
+                  <div class="social-disc bg-violet-50">
+                      <i class="text-lg text-violet-600 fab fa-instagram"></i>
+                  </div>
+              </a>
 
-          <div
-            class="social-disc bg-rose-50 "
-          >
-            <i class="text-lg text-rose-600 fab fa-facebook-f"></i>
+              <a href="http://facebook.com/fitnessfia" rel="nofollow" target="_blank">
+                  <div class="social-disc bg-rose-50 ">
+                      <i class="text-lg text-rose-600 fab fa-facebook-f"></i>
+                  </div>
+              </a>
+              <a href="https://pinterest.com/fitnessfia" rel="nofollow" target="_blank">
+                  <div class="social-disc bg-violet-50">
+                      <i class="text-2xl fab text-violet-600 fa-pinterest-p"></i>
+                  </div>
+              </a>
           </div>
-          <div
-            class="social-disc bg-violet-50"
-      >
-            <i class="text-2xl fab text-violet-600 fa-pinterest-p"></i>
-          </div>
-        </div>
-        <ul
-          class="w-full py-4 font-sans text-base font-thin tracking-wider text-gray-800 uppercase"
-        >
-          <a href=""><li class="top-0 py-3 mx-2 border-b">Börja Här</li></a>
-          <a href="https://fitnessfia.com"><li class="top-0 py-3 mx-2 border-b">Blogg</li></a>
-          <a href=""><li class="top-0 py-3 mx-2 border-b">Gratis E-bok</li></a>
-          <a href=""><li class="top-0 py-3 mx-2 border-b">Om Fitnessfia</li></a>
-          <a href=""><li class="top-0 py-3 mx-2 border-b">Kontakta Mig</li></a>
-        </ul>
+          <ul class="w-full py-4 font-sans text-base font-thin tracking-wider text-gray-800 uppercase">
+              <a href="https://fitnessfia.com/borja-har/">
+                  <li class="top-0 py-3 mx-2 border-b">Börja Här</li>
+              </a>
+              <a href="http://uppgift1.local/blog">
+                  <li class="top-0 py-3 mx-2 border-b">Blogg</li>
+              </a>
+              <a href="https://fitnessfia.com/gratis-ebok/">
+                  <li class="top-0 py-3 mx-2 border-b">Gratis E-bok</li>
+              </a>
+              <a href="https://fitnessfia.com/fitnessfia-vem-ar-jag/">
+                  <li class="top-0 py-3 mx-2 border-b">Om Fitnessfia</li>
+              </a>
+              <a href="https://fitnessfia.com/kontakta-mig/">
+                  <li class="top-0 py-3 mx-2 border-b">Kontakta Mig</li>
+              </a>
+          </ul>
       </div>
-    </div>
-    <div
-      id="hero-section"
-      class="relative w-screen mx-auto overflow-hidden clip-path-up-mobile md:clip-path-up transition h-mobile md:h-laptop 2xl:h-desktop 3xl:h-wide md:min-h-laptop bg-gradient-to-br from-rose-100 to-violet-100 bg-opacity-5"
-    >
-    <nav
-        class="fixed z-40 flex items-center justify-between w-full px-8 py-6 m-auto bg-transparent bg-white transition lg:px-24 2xl:px-32 bg-opacity-80 duration-500 shadow-sm"
-        >
-        <div
-          class="flex items-center justify-between w-screen m-auto max-w-desktop"
-        >
-          <div class="text-2xl font-bold">FitnessFia</div>
-          <div
-            id="hamburger-menu"
-            class="flex flex-col cursor-pointer space-y-2"
-          >
-            <div class="w-10 bg-gray-700 h-2px"></div>
-            <div class="w-8 bg-gray-700 h-2px"></div>
+  </div>
+  <div id="hero-section" class="relative z-20 w-screen mx-auto overflow-hidden transition h-mobile md:h-laptop 2xl:h-desktop 3xl:h-wide md:min-h-laptop bg-gradient-to-br from-rose-100 to-violet-100 bg-opacity-5">
+      <nav class="fixed z-40 flex items-center justify-between w-full px-8 py-6 m-auto bg-transparent transition lg:px-24 2xl:px-32">
+          <div class="flex items-center justify-between w-screen m-auto max-w-desktop">
+              <div class="font-sans text-2xl font-black text-gray-600">FitnessFia</div>
+              <div id="hamburger-menu" class="flex flex-col cursor-pointer space-y-2">
+                  <div class="w-10 bg-gray-700 h-2px"></div>
+                  <div class="w-8 bg-gray-700 h-2px"></div>
+              </div>
           </div>
-        </div>
       </nav>
-      <div
-        id="hero-content"
-        class="flex items-center m-auto h-2/3 max-w-desktop lg:h-4/5 md:px-20"
-      >
-        <div
-          class="flex flex-col items-end px-4 ml-auto mr-2 lg:mx-0 lg:items-start"
-        >
-          <span class="mr-3 text-4xl font-thin uppercase md:text-6xl"
-            >Strive For</span
-          >
-          <h2
-            class="font-sans text-6xl font-black tracking-wider text-gray-700 uppercase md:text-9xl lg:text-9xl"
-          >
-            Balance
-          </h2>
-          <p
-            class="mt-4 mr-1 text-xs text-red-600 lg:ml-2 tracking-extra font-body"
-          >
-            JOIN MY JOURNEY INTO
-          </p>
-          <div class="w-10 mt-2 mr-2 bg-red-600 lg:ml-2 h-2px"></div>
-          <a
-            class="mt-8 mr-1 btn-secondary lg:mt-12"
-            >Check it Out</a
-          >
-        </div>
-        <div
-          class="absolute right-0 w-full bottom-10 md:w-3/4 lg:right-8 lg:w-1/2 2xl:right-32 3xl:right-1/5 3xl:w-1/3"
-        >
-          <img
-            src="dist/assets/hero-large.png"
-            class="filter drop-shadow-xl"
-            alt="hero shot"
-          />
-        </div>
+      <div id="hero-content" class="flex items-center m-auto h-2/3 max-w-desktop lg:h-4/5 md:px-20">
+          <div class="flex flex-col items-end px-4 ml-auto mr-2 lg:mx-0 lg:items-start">
+              <span class="mr-3 text-4xl font-thin uppercase md:text-6xl">Uppnå</span>
+              <h2 class="font-sans text-6xl font-black tracking-wider text-gray-700 uppercase md:text-9xl lg:text-9xl">
+                  Balans
+              </h2>
+              <p class="mt-4 mr-1 text-sm text-red-600 lg:mt-8 md:text-lg lg:text-xl lg:ml-2 font-body">
+                  Ladda Ner Min E-bok "Kosten är 80%"
+              </p>
+              <div class="w-32 mt-4 mr-2 bg-red-600 lg:ml-2 h-2px"></div>
+              <a href="https://fitnessfia.com/gratis-ebok/" class="mt-8 mr-1 btn-secondary lg:mt-12">Gratis E-bok</a>
+          </div>
+          <div class="absolute right-0 w-full bottom-10 md:w-3/4 lg:right-8 lg:w-1/2 2xl:right-32 3xl:right-1/5 3xl:w-1/3">
+              <img src="https://fitnessfia.com/wp-content/uploads/2021/09/hero-large.png" class="filter drop-shadow-xl" alt="hero shot" />
+          </div>
       </div>
-    </div>
+      <div class="flex mt-auto">
+          <div class="absolute bottom-0 inline-block w-2/3">
+              <div class="w-full h-20 bg-white transform skew-y-3 origin-top-left 2xl:h-40"></div>
+          </div>
 
-    <!--*************************-->
-    <!--Start of About Me Section-->
-    <!--*************************-->
+          <div class="absolute bottom-0 right-0 inline-block w-1/3">
+              <div class="h-20 bg-white transform -skew-y-6 origin-bottom-right 2xl:h-40"></div>
+          </div>
+      </div>
+  </div>
 
-    <section
-      class="relative z-0 flex flex-col px-12 py-12 bg-white space-y-8 lg:px-36 lg:py-32 md:px-16 3xl:px-96 md:flex-row md:space-x-8"
-    >
-      <div
-        class="relative flex flex-col items-start justify-end w-full mx-auto md:flex-row md:w-1/2 2xl:w-1/3"
-      >
-        <h2 class="w-full font-sans text-3xl font-black text-center text-gray-900 uppercase md:hidden">
-          Några Ord Om Mig
-        </h2>
-        <div class="w-24 m-auto mt-12 bg-red-500 md:hidden md:block h-2px"></div>
-        <img src="dist/assets/fia-front.png" class="mt-12 md:mt-0" />
-        <div
-          class="absolute hidden w-64 bg-red-500 top-36 lg:block h-60 xl:top-60 right-16 w-2px"
-        ></div>
+  <!--*************************-->
+  <!--Start of About Me Section-->
+  <!--*************************-->
+
+  <section class="relative flex flex-col px-12 py-12 bg-white space-y-8 lg:px-36 lg:py-32 md:px-16 3xl:px-96 md:flex-row md:justify- md:space-x-8">
+      <div class="relative flex flex-col items-start justify-end w-full mx-auto md:flex-row md:w-1/2 2xl:w-1/3">
+          <h2 class="w-full font-sans text-3xl font-black text-center text-gray-900 uppercase md:hidden">
+              Några Ord Om Mig
+          </h2>
+          <div class="w-24 m-auto mt-12 bg-red-500 md:hidden md:block h-2px"></div>
+          <img src="https://fitnessfia.com/wp-content/uploads/2021/09/fia-front.png" class="mt-12 md:mt-0" />
+          <div class="absolute hidden w-64 bg-red-500 top-36 lg:block h-60 xl:top-60 right-16 w-2px"></div>
       </div>
       <div class="w-full md:w-1/2">
-        <h2 class="hidden font-sans text-3xl font-black text-gray-900 uppercase md:block">
-          Några Ord Om Mig
-        </h2>
-        <div class="hidden w-24 mt-12 bg-red-500 md:block h-2px"></div>
-        <div
-          class="flex flex-col w-full pb-12 text-gray-600 md:py-12 space-y-4 xl:space-y-8 xl:text-lg 2xl:pr-8 3xl:w-2/3"
-        >
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-          <p>
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-            amet.
-          </p>
-          <div class="flex items-center pt-8 space-x-4 justify-items-center">
-            <div class="social-disc text-violet-600 bg-violet-50">
-              <i class="fab fa-instagram"></i>
-            </div>
-            <div class="social-disc text-rose-600 bg-rose-50">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-            <div class="social-disc text-violet-600 bg-violet-50">
-              <i class="fab fa-pinterest-p"></i>
-            </div>
-            <div class="social-disc text-rose-600 bg-rose-50">
-              <i class="far fa-envelope"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--****************************-->
-    <!--Start of Testimonial Section-->
-    <!--****************************-->
-    
-    <section id="testimonial">
-      <div class="relative m-auto overflow-hidden xs:pb-8 lg:pb-24 max-w-desktop">
-        <img
-            class="absolute inset-0 bg-red-400"
-            src="dist/assets/fia-testimonial-large.png"
-            alt=""
-            />
-     
-        <div
-            class="relative z-10 flex flex-col w-screen p-6 md:p-12 lg:p-24 text-gray-50 lg:w-2/3 2xl:p-24 2xl:w-1/2 md:space-y-6 lg:space-y-8"
-            >
-            <h2 class="font-sans text-2xl font-black uppercase lg:text-3xl">
-              What People has to say about me
-            </h2>
-          <div class="w-24 mt-8 bg-red-500 h-2px"></div>
-          <i class="mt-8 text-4xl lg:text-6xl fas fa-quote-left"></i>
-          <div class="hidden sm:block">
-            <div class="flex flex-col mt-8">
-              <p
-                  class="mt-auto text-xl font-light lg:text-2xl 2xl:text-3xl lg:font-thin md:text-gray-50"
-                  >
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                  sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                  rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                  ipsum dolor sit amet.
+          <h2 class="hidden font-sans text-3xl font-black text-gray-900 uppercase md:block">
+              Några Ord Om Mig
+          </h2>
+          <div class="hidden w-24 mt-12 bg-red-500 md:block h-2px"></div>
+          <div class="flex flex-col w-full pb-12 text-gray-600 md:py-12 space-y-4 xl:space-y-8 xl:text-lg 2xl:pr-8 3xl:w-2/3">
+              <p>
+                  För några år sedan var jag på botten vad gäller min hälsa. Det var då jag blev tvungen att ta
+                  tag i situationen både på insidan och utsidan.
               </p>
-            </div>
-            <div
-                class="flex flex-col mt-8 lg:items-center space-y-2 md:p-0 md:text-gray-50 lg:space-y-0 lg:space-x-4 lg:flex-row"
-                >
-                <span class="font-black">SANDRA FRIBERG</span><span>INFLUENCER</span>
-            </div>
+              <p>
+                  Sakta men säkert började jag märka förändring – och det gjorde även folk omkring mig. Jag
+                  började få frågor kring vad jag gjort, hur jag tränat och hur jag gått ner i vikt. Många ville
+                  veta hur just de kunde uppnå sin livs toppform. Det var så denna träningsblogg föddes – för
+                  jag ville dela med mig om vad jag gjort och vad som verkligen funkar (bortom alla
+                  snabbdieter och falska löpsedlar).
+              </p>
+              <p>
+                  Efter två tuffa graviditeter har jag fått nya utmaningar. Precis som många av mina läsare har
+                  jag numer stor brist på tid, och ibland även motivation. Tillsammans kan vi inspirera
+                  varandra till att få till träningen, och att sträva efter att äta nyttigt (för det mesta).
+              </p>
+              <div class="flex items-center pt-8 space-x-4 justify-items-center">
+                  <a href="https://instagram.com/_fitnessfia" rel="nofollow" target="_blank">
+                      <div class="social-disc text-violet-600 bg-violet-50">
+                          <i class="fab fa-instagram"></i>
+                      </div>
+                  </a>
+                  <a href="https://facebook.com/fitnessfia" rel="nofollow" target="_blank">
+                      <div class="social-disc text-rose-600 bg-rose-50">
+                          <i class="fab fa-facebook-f"></i>
+                      </div>
+                  </a>
+                  <a href="https://pinterest.com/fitnessfia" rel="nofollow" target="_blank">
+                      <div class="social-disc text-violet-600 bg-violet-50">
+                          <i class="fab fa-pinterest-p"></i>
+                      </div>
+                  </a>
+                  <a href="mailto:sofia@marsianog.com">
+                      <div class="social-disc text-rose-600 bg-rose-50">
+                          <i class="far fa-envelope"></i>
+                      </div>
+                  </a>
+              </div>
           </div>
-        </div>
+      </div>
+  </section>
+
+  <!--****************************-->
+  <!--Start of Testimonial Section-->
+  <!--****************************-->
+
+  <section id="testimonial">
+      <div class="relative m-auto overflow-hidden xs:pb-8 lg:pb-24 max-w-desktop">
+          <img class="absolute inset-0 bg-red-400" src="https://fitnessfia.com/wp-content/uploads/2021/09/fia-testimonial-large.png" alt="" />
+
+          <div class="relative z-10 flex flex-col w-screen p-6 md:p-12 lg:p-24 text-gray-50 lg:w-3/4 2xl:p-24 2xl:w-1/2 md:space-y-6 lg:space-y-8">
+              <h2 class="font-sans text-2xl font-black uppercase lg:text-3xl">
+                  MIN HÄLSOFILOSOFI
+              </h2>
+              <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+              <i class="mt-8 text-4xl lg:text-6xl fas fa-quote-left"></i>
+              <div class="hidden sm:block">
+                  <div class="flex flex-col mt-8">
+                      <p class="mt-auto text-base font-light lg:text-xl lg:text-2xl 2xl:text-3xl lg:font-thin md:text-gray-50">
+                          Att försöka ta till quick fixes har jag för länge sedan slutat med. Hälsa är något som är
+                          långsiktigt. Du behöver ofta inte ta till stora förändringar - att byta små (o)vanor kan faktiskt
+                          ge stora resultat. För att uppnå dina hälsomål behöver du förstå hur kroppen funkar, vad
+                          som händer när du äter vissa saker och när du tränar på ett visst sätt. Ofta måste vi lära om,
+                          för vi är så fullmatade med myter och falsk information.
+                      </p>
+                      <p class="mt-4 text-base lg:mt-8 lg:text-xl">Jag hoppas att kunna vara en inspiration för dig på din hälsoresa</p>
+                      <p class="mt-4 text-xl tracking-wide uppercase">Sofia Marklund</p>
+                  </div>
+              </div>
+          </div>
 
       </div>
       <div class="px-12 py-8 m-auto overflow-hidden sm:hidden max-w-desktop">
-        <div class="flex flex-col">
-          <p
-              class="font-light text-gray-800"
-              >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-              sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-              rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-              ipsum dolor sit amet.
-          </p>
-        </div>
-        <div
-            class="flex flex-col mt-8 text-gray-900 "
-            >
-            <span class="font-black">SANDRA FRIBERG</span><span>INFLUENCER</span>
-        </div>
+          <div class="flex flex-col">
+              <p class="font-light text-gray-800">
+                  Att försöka ta till quick fixes har jag för länge sedan slutat med. Hälsa är något som är
+                  långsiktigt. Du behöver ofta inte ta till stora förändringar - att byta små (o)vanor kan faktiskt
+                  ge stora resultat. För att uppnå dina hälsomål behöver du förstå hur kroppen funkar, vad
+                  som händer när du äter vissa saker och när du tränar på ett visst sätt. Ofta måste vi lära om,
+                  för vi är så fullmatade med myter och falsk information.
+              </p>
+              <p class="mt-4 lg:mt-8 lg:text-xl">Jag hoppas att kunna vara en inspiration för dig på din hälsoresa.</p>
+              <p class="mt-4 text-xl font-bold tracking-wide uppercase">Sofia Marklund</p>
+          </div>
       </div>
-    </section>
+  </section>
 
 
-    <!--**********************-->
-    <!--Start of Blog Section -->
-    <!--**********************-->
-    <section id="blog-news"
-      class="relative p-12 m-auto mt-12"
-      >
+  <!--**********************-->
+  <!--Start of Blog Section -->
+  <!--**********************-->
+  <section id="blog-news" class="relative p-12 m-auto mt-12">
       <div class="m-auto text-center">
-        <h2 class="font-sans text-3xl font-black text-gray-900 uppercase">
-          News From the Blog
-        </h2>
-        <div class="w-24 m-auto mt-12 bg-red-500 h-2px"></div>
-        <div
-            class="mt-12"
-            >
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-        </div>
-        <div class="mt-12"><a class="btn-secondary" href="">Check Blog</a></div>
+          <h2 class="font-sans text-3xl font-black text-gray-900 uppercase">
+              Nytt Från Bloggen
+          </h2>
+          <div class="w-24 m-auto mt-12 bg-red-500 h-2px"></div>
+          <div class="mt-12">
+              Här hittar du de senaste inläggen från bloggen.
+              </p>
+          </div>
 
       </div>
 
-      <div class="relative flex items-center justify-center mt-6">
-        <div class="relative w-screen max-w-desktop lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
-            <div class="relative w-full overflow-hidden bg-blue-400 rounded-t-xl">
-              <img id="feat-img-1" class="relative object-contain w-full rounded-t-xl "
-              alt="">
-            </div>
-            <div class="flex flex-col justify-between px-8 py-4 space-y-4">
-              <div id="feat-cat-1" class="flex mt-2 text-xs gap-1">
-              </div>
-              <a id="feat-title-link-1">
-                <h2 id="feat-title-1" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
-              </a>
-              <div id="feat-excerpt-1" class="line-clamp-6">
+      <div class="relative flex items-center justify-center mt-2">
+          <div class="relative w-screen max-w-desktop lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+              <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
+                  <div class="relative w-full overflow-hidden bg-blue-400 rounded-t-xl">
+                      <img id="feat-img-1" class="relative object-contain w-full rounded-t-xl " alt="">
+                  </div>
+                  <div class="flex flex-col justify-between px-8 py-4 space-y-4">
+                      <div id="feat-cat-1" class="flex mt-2 text-xs gap-1">
+                      </div>
+                      <a id="feat-title-link-1">
+                          <h2 id="feat-title-1" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
+                      </a>
+                      <div id="feat-excerpt-1" class="line-clamp-6">
+
+                      </div>
+                  </div>
+                  <div class="px-8 pb-2 my-6">
+                      <a id="feat-link-1" class="text-lg btn-primary">Läs Mer</a>
+                  </div>
               </div>
-            </div>
-              <div class="px-8 pb-2 my-6">
-                <a id="feat-link-1" class="text-lg btn-primary">Läs Mer</a>
+
+              <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
+                  <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
+                      <img id="feat-img-2" class="object-contain w-full rounded-t-xl " alt="">
+                  </div>
+                  <div class="flex flex-col justify-between px-8 py-4 space-y-4">
+                      <div id="feat-cat-2" class="flex mt-2 text-xs gap-1">
+                      </div>
+                      <a id="feat-title-link-2">
+                          <h2 id="feat-title-2" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
+                      </a>
+                      <div id="feat-excerpt-2" class="line-clamp-6">
+
+                      </div>
+                  </div>
+                  <div class="px-8 pb-2 my-6">
+                      <a id="feat-link-2" class="text-lg btn-primary">Läs Mer</a>
+                  </div>
+              </div>
+
+              <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
+                  <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
+                      <img id="feat-img-3" class="object-contain w-full rounded-t-xl " alt="">
+                  </div>
+                  <div class="flex flex-col justify-between px-8 py-4 space-y-4">
+                      <div id="feat-cat-3" class="flex mt-2 text-xs gap-1">
+                      </div>
+                      <a id="feat-title-link-3">
+                          <h2 id="feat-title-3" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
+                      </a>
+                      <div id="feat-excerpt-3" class="line-clamp-6">
+
+                      </div>
+                  </div>
+                  <div class="px-8 pb-2 my-6">
+                      <a id="feat-link-3" class="text-lg btn-primary">Läs Mer</a>
+                  </div>
               </div>
           </div>
+      </div>
+  </section>
 
-          <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
-            <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
-              <img id="feat-img-2" class="object-contain w-full rounded-t-xl "
-              alt="">
-            </div>
-            <div class="flex flex-col justify-between px-8 py-4 space-y-4">
-              <div id="feat-cat-2" class="flex mt-2 text-xs gap-1">
-              </div>
-              <a id="feat-title-link-2">
-                <h2 id="feat-title-2" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
-              </a>
-              <div id="feat-excerpt-2" class="line-clamp-6">
+  <!--****************************-->
+  <!--Start of Contact Me Section -->
+  <!--****************************-->
 
+  <section id="contact-me" class="relative w-screen m-auto mt-24 bg-gray-50 md:mt-36 2xl:mt-96 min-h-mobile">
+      <div class="absolute top-0 flex w-full h-72">
+          <div class="w-1/3 h-full bg-gray-50 transform -skew-y-12 origin-left"></div>
+          <div class="w-2/3 h-full bg-gray-50 transform skew-y-6 origin-right"></div>
+      </div>
+      <div class="m-auto max-w-desktop">
+          <div class="relative flex flex-col justify-center pb-12 lg:flex-row max-w-desktop">
+              <div class="relative flex items-center justify-center w-full p-12 lg:mt-8 lg:justify-end lg:w-1/2">
+                  <div class="absolute w-3/4 shadow-md bg-gradient-to-br from-rose-200 to-violet-200 lg:w-2/3 top-8 h-4/6 left-20 lg:left-40">
+                  </div>
+                  <img src="https://fitnessfia.com/wp-content/uploads/2018/01/Fördelar-med-träning.jpg" class="relative w-full shadow-lg lg:w-3/4" alt="">
               </div>
-            </div>
-              <div class="px-8 pb-2 my-6">
-                <a id="feat-link-2" class="text-lg btn-primary">Läs Mer</a>
+              <div class="flex flex-col w-full px-12 py-8 lg:p-8 lg:w-1/2 space-y-8">
+                  <h2 class="font-sans text-4xl font-black uppercase">Kontakta Mig</h2>
+                  <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+                  <form action="" method="post" class="flex flex-col py-4 space-y-8">
+                      <div class="flex flex-col">
+                          <div class="mb-2 font-sans text-xl font-bold">Förnamn:</div>
+                          <div><input id="sender-name" required type="text" name="sender-name" class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-500 focus:bg-white lg:w-2/3 "></div>
+                      </div>
+
+                      <div class="flex flex-col">
+                          <div class="mb-2 font-sans text-xl font-bold">Email:</div>
+                          <div><input id="sender-email" required type="email" name="sender-email" class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-500 focus:bg-white lg:w-2/3 "></div>
+                      </div>
+
+                      <div class="flex flex-col">
+                          <div class="font-sans text-xl font-bold">Meddelande:</div>
+                          <div>
+                              <textarea name="message" id="message" required class="w-full p-3 mt-4 bg-transparent border-0 border-b-2 border-gray-500 outline-none focus:outline-none focus:bg-white lg:w-2/3"></textarea>
+                          </div>
+                      </div>
+                      <div class="w-1/2 md:w-1/4">
+                          <input type="submit" id="submit-message" value="Skicka" class="btn-secondary">
+                      </div>
+                  </form>
+              </div>
+  </section>
+
+  <section class="relative w-screen p-8 m-auto bg-gray-900 lg:p-12 text-gray-50">
+      <div class="flex flex-col w-full h-full m-auto gap-8 max-w-desktop lg:gap-4 justify-evenly xl:flex-row">
+          <div class="w-full h-full px-4 py-2">
+              <h2 class="font-sans text-lg font-black">FitnessFia</h2>
+              <div class="w-24 mt-8 bg-red-500 h-2px"></div>
+              <p class="mt-4">
+                  Fitnessfia är en av Sveriges största hälso- och träningsbloggar. Här hittar du bland annat
+                  träningsövningar, nyttiga recept, recensioner av träningskläder och hälsoinspiration.
+              <div class="flex mt-8 gap-6">
+                  <a href="https://facebook.com/fitnessfia" rel="nofollow" target="_blank" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com/_fitnessfia" rel="nofollow" target="_blank" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-instagram"></i></a>
+                  <a href="https://pinterest.com/fitnessfia" rel="nofollow" target="_blank" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-pinterest-p"></i></a>
+                  <a href="mailto:sofia@marsianog.com" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl far fa-envelope"></i></a>
               </div>
           </div>
-          
-          <div class="relative flex flex-col mt-10 rounded shadow bg-gray-50 rounded-xl ">
-            <div class="w-full overflow-hidden bg-blue-400 rounded-t-xl">
-              <img id="feat-img-3" class="object-contain w-full rounded-t-xl "
-              alt="">
-            </div>
-            <div class="flex flex-col justify-between px-8 py-4 space-y-4">
-              <div id="feat-cat-3" class="flex mt-2 text-xs gap-1">
-              </div>
-              <a id="feat-title-link-3">
-                <h2 id="feat-title-3" class="font-sans font-black text-gray-900 lg:text-lg line-clamp-3 lg:line-clamp-2 lg:text-xl"></h2>
-              </a>
-              <div id="feat-excerpt-3" class="line-clamp-6">
-
-              </div>
-            </div>
-              <div class="px-8 pb-2 my-6">
-                <a id="feat-link-3" class="text-lg btn-primary">Läs Mer</a>
+          <div class="w-1/2 h-full px-4 py-2 ">
+              <h2 class="font-sans text-lg font-black uppercase">Snabblänkar</h2>
+              <ul class="flex flex-col mt-8 gap-4">
+                  <li><a href="https://fitnessfia.com" target="_blank">Hem</a></li>
+                  <li><a href="https://fitnessfia.com/fitnessfia-vem-ar-jag/" target="_blank">Om Mig</a></li>
+                  <li><a href="https://fitnessfia.com/kontakta-mig/" target="_blank">Kontakta Mig</a></li>
+                  <li><a href="https://fitnessfia.com/blog" target="_blank">Blogg</a></li>
+              </ul>
+          </div>
+          <div class="w-full h-full px-4 py-2">
+              <h2 class="text-lg font-black uppercase fonst-sans">Senaste
+                  Blogginläggen</h2>
+              <div class="flex flex-col mt-8 gap-4">
+                  <a id="post-link-1">
+                      <div id="recent-post-1" class="flex w-full h-28 gap-2">
+                          <div id="img-1" class="w-20 h-20">
+                          </div>
+                          <div class="w-3/4 overflow-hidden">
+                              <h2 id="title-1" class="font-sans text-sm font-black leading-tight"></h2>
+                              <div id="date-1" class="mt-1 text-sm text-gray-300">
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+                  <a id="post-link-2">
+                      <div id="recent-post-2" class="flex w-full h-28 md:w-5/12 lg:w-full gap-2">
+                          <div id="img-2" class="w-20 h-20">
+                          </div>
+                          <div class="w-3/4 overflow-hidden">
+                              <h2 id="title-2" class="font-sans text-sm font-black leading-tight"></h2>
+                              <div id="date-2" class="mt-1 text-sm text-gray-300">
+                              </div>
+                          </div>
+                      </div>
+                  </a>
               </div>
           </div>
-        </div>
-      </div>  
-    </section>
-    
-    <!--****************************-->
-    <!--Start of Contact Me Section -->
-    <!--****************************-->
-   
-    <section id="contact-me" class="relative w-screen m-auto clip-path-down-mobile lg:clip-path-down bg-gray-50 min-h-mobile">
+          <div class="w-full h-full px-4 py-2">
+              <h2 class="font-sans text-lg font-black uppercase">
+                  Nyhetsbrev</h2>
+              <p class="mt-6">
+                  Anmäl dig till mitt nyhetsbrev och ta del av rabatter, träningsinspiration & nyttiga recept.
+              </p>
+              <form action="/" method="POST" class="relative mt-2">
+                  <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Your Email" class="w-4/5 p-2 mt-2 text-lg text-gray-700 bg-gray-600 rounded-l md:w-1/2 xl:w-4/5 focus:bg-gray-100">
+                  <button type="submit" class="absolute mt-2 text-gray-600 bg-transparent border-gray-600 rounded-l-none btn-primary hover:text-gray-200 hover:border-gray-200 transition">
+                      <i class="fas fa-paper-plane"></i>
+                  </button>
+              </form>
 
-      <div class="flex flex-col items-center justify-center py-24 mx-auto mt-12 lg:flex-row max-w-desktop">
-          <div class="relative flex items-center justify-center w-full p-12 md:p-24 lg:w-1/2">
-            <div class="absolute w-3/4 shadow-md bg-gradient-to-br from-rose-200 to-violet-200 lg:w-2/3 top-8 h-4/6 left-20 lg:left-40">
-            </div>
-            <img
-                src="https://fitnessfia.com/wp-content/uploads/2018/01/Fördelar-med-träning.jpg"
-                class="relative w-full shadow-lg" alt="">
           </div>
-          <div class="flex flex-col w-full px-12 py-8 lg:p-8 lg:w-1/2 space-y-8">
-            <h2 class="font-sans text-4xl font-black uppercase">Contact me</h2>
-            <div class="w-24 mt-8 bg-red-500 h-2px"></div>
-            <form action="" method="post" class="flex flex-col py-4 space-y-8">
-              <div class="flex flex-col">
-                <div class="mb-2 font-sans text-xl font-bold">Name:</div>
-                <div><input id="sender-name" required type="text" name="sender-name"
-                  class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-500 focus:bg-white lg:w-2/3 "></div>
-              </div>
-
-              <div class="flex flex-col">
-                <div class="mb-2 font-sans text-xl font-bold">Email:</div>
-                <div><input id="sender-email" required type="email" name="sender-email"
-                  class="w-full p-3 bg-transparent border-0 border-b-2 border-gray-500 focus:bg-white lg:w-2/3 "></div>
-              </div>
-
-              <div class="flex flex-col">
-                <div class="font-sans text-xl font-bold">Message:</div>
-                <div>
-                  <textarea name="message" id="message" required class="w-full p-3 mt-4 bg-transparent border-0 border-b-2 border-gray-500 outline-none focus:outline-none focus:bg-white lg:w-2/3"></textarea>
-                </div>
-              </div>
-              <div class="w-1/2 md:w-1/4">
-                <input type="submit" id="submit-message" value="Send Message"
-                class="btn-secondary">
-              </div>
-            </form>
-          </div>
-    </section>
-
-    <section class="relative w-screen p-8 m-auto bg-gray-900 lg:p-12 text-gray-50">
-     <div class="flex flex-col w-full h-full m-auto gap-8 max-w-desktop lg:gap-4 justify-evenly xl:flex-row">
-       <div class="w-full h-full px-4 py-2">
-         <h2 class="font-sans text-lg font-black">FitnessFia</h2>
-         <div class="w-24 mt-8 bg-red-500 h-2px"></div>
-         <p class="mt-4 text-gray-50">
-            Fitnessfia är en av Sveriges största hälso- och träningsbloggar. Här hittar du bland annat
-          träningsövningar, nyttiga recept, recensioner av träningskläder och hälsoinspiration.
-         <div class="flex mt-8 gap-6">
-            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full text-gray-50 transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-facebook-f"></i></a>
-            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-instagram"></i></a>
-            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl fab fa-pinterest-p"></i></a>
-            <a href="" class="flex items-center justify-center w-10 h-10 p-2 border rounded-full transtion hover:bg-red-700 hover:border-red-700"><i class="text-xl far fa-envelope"></i></a>
-         </div>
-       </div>
-       <div class="w-1/2 h-full px-4 py-2 ">
-         <h2 class="font-sans text-lg font-black uppercase">Quick Links</h2>
-         <ul class="flex flex-col mt-8 gap-4">
-           <li>Hem</li>
-           <li>Om Mig</li>
-           <li>Kontakt</li>
-           <li>Blogg</li
-         </ul>
-       </div>
-       <div class="w-full h-full px-4 py-2">
-         <h2 class="text-lg font-black uppercase fonst-sans">Latest Blog Posts</h2>
-         <div class="flex flex-col mt-8 gap-4">
-           <a id="post-link-1">
-             <div id="recent-post-1" class="flex w-full h-28 gap-2">
-               <div id="img-1" class="w-20 h-20">
-               </div>
-               <div class="w-3/4 overflow-hidden">
-                 <h2 id="title-1" class="font-sans text-sm font-black leading-tight"></h2>
-                 <div id="date-1" class="mt-1 text-sm text-gray-300">
-                 </div>
-               </div>
-             </div>
-           </a>
-           <a id="post-link-2">
-             <div id="recent-post-2" class="flex w-full h-28 md:w-5/12 lg:w-full gap-2">
-               <div id="img-2" class="w-20 h-20">
-               </div>
-               <div class="w-3/4 overflow-hidden">
-                 <h2 id="title-2" class="font-sans text-sm font-black leading-tight"></h2>
-                 <div id="date-2" class="mt-1 text-sm text-gray-300">
-                 </div>
-               </div>
-             </div>
-           </a>
-         </div>
-       </div>
-       <div class="w-full h-full px-4 py-2">
-         <h2 class="font-sans text-lg font-black uppercase">
-           Nyhetsbrev</h2>
-         <p class="mt-6 text-gray-50">
-        Anmäl dig till mitt nyhetsbrev och ta del av rabatter, träningsinspiration & nyttiga recept.
-         </p>
-         <form action="/" method="POST" class="relative mt-2">
-           <input type="email" name="subscribe-email" id="subscribe-email"
-                                                      placeholder="Your Email"
-           class="w-4/5 p-2 mt-2 text-lg text-gray-700 bg-gray-600 rounded-l md:w-1/2 xl:w-4/5 focus:bg-gray-100">
-           <button type="submit" class="absolute mt-2 text-gray-600 bg-transparent border-gray-600 rounded-l-none btn-primary hover:text-gray-200 hover:border-gray-200 transition">
-             <i class="fas fa-paper-plane"></i>
-           </button>
-         </form>
-
-       </div>
-     </div> 
+      </div>
     </section>
     <div class="w-screen px-16 py-1 text-gray-500 bg-gray-100">
-      <p class="text-xs tracking-wide text-center">© 2021 FitnessFia All Rights Reserved. MARSian
-      Online Group AB</p>
+        <p class="text-xs tracking-wide text-center">© 2021 FitnessFia All Rights Reserved. MARSian
+            Online Group AB</p>
     </div>
     <script src="dist/js/script.js"></script>
   </body>
