@@ -20,13 +20,13 @@
 
 @layer components {
   .social-disc {
-    @apply flex items-center justify-center w-12 h-12 rounded-full shadow;
+    @apply flex  items-center  justify-center  w-12  h-12  rounded-full  shadow;
   }
   .btn-primary {
-    @apply px-4 py-2 font-bold text-white bg-red-600 border-2 border-red-600 shadow-md cursor-pointer rounded-md hover:bg-transparent hover:text-red-600;
+    @apply px-4  py-2  font-bold  text-white  bg-red-600  border-2  border-red-600  shadow-md  cursor-pointer  rounded-md hover:bg-transparent hover:text-red-600;
   }
   .btn-secondary {
-    @apply px-4 py-2 font-bold text-red-600 bg-transparent border-2 border-red-600 shadow cursor-pointer rounded-md hover:bg-red-500 hover:text-white;
+    @apply px-4  py-2  font-bold  text-red-600  bg-transparent  border-2  border-red-600  shadow  cursor-pointer  rounded-md hover:bg-red-500 hover:text-white;
   }
   .cat-bullets {
     @apply px-3 py-1 rounded-2xl;
